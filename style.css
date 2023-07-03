@@ -13,6 +13,10 @@ body {
   min-height: 100vh;
 }
 
+main{
+  margin-inline:10px ;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -96,7 +100,7 @@ main .buttons {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   background-color: hsl(223, 31%, 20%);
-  gap: 20px; 
+  gap: 20px;
 }
 
 main .buttons span {
@@ -114,7 +118,7 @@ main .buttons span {
   user-select: none;
 }
 
-main .buttons .input:hover{
+main .buttons .input:hover {
   background-color: white;
 }
 
@@ -128,7 +132,7 @@ main .buttons .del {
 
 main .buttons .reset:hover::before,
 main .buttons .del:hover::before,
-main .buttons .equal:hover::before{
+main .buttons .equal:hover::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -152,28 +156,30 @@ main .buttons .equal {
 
 /* Theme 3 */
 
-.theme-3{
+.theme-3 {
   background-color: hsl(268, 75%, 9%);
   color: hsl(52, 100%, 62%);
 }
 
-.theme-3 header .toggle ,.theme-3 main .buttons , .theme-3 main .screen{
+.theme-3 header .toggle,
+.theme-3 main .buttons,
+.theme-3 main .screen {
   background-color: hsl(268, 71%, 12%);
   color: hsl(52, 100%, 62%);
 }
 
-.theme-3 header .toggle .ball{
-  background-color:hsl(176, 100%, 44%) ;
+.theme-3 header .toggle .ball {
+  background-color: hsl(176, 100%, 44%);
 }
 
-.theme-3 main .buttons span{
+.theme-3 main .buttons span {
   color: hsl(52, 100%, 62%);
   background-color: hsl(268, 47%, 21%);
   box-shadow: 0 3px hsl(290, 70%, 36%);
 }
 
 .theme-3 main .buttons .input:hover {
-  background-color:hsl(281, 89%, 26%) ;
+  background-color: hsl(281, 89%, 26%);
 }
 
 .theme-3 main .buttons .reset,
@@ -236,4 +242,13 @@ main .buttons .equal {
   background-color: hsl(25, 98%, 40%);
   box-shadow: 0 3px hsl(25, 99%, 27%);
   color: white;
+}
+
+@media (max-width:450px) {
+  main{
+    width: calc(100% - 15px);
+  }
+    main .screen{
+      width: 100%;
+    }
 }

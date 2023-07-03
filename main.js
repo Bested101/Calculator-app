@@ -41,7 +41,6 @@ inputs.forEach((i) => {
     ) {
       screen.innerHTML += i.innerHTML;
     }
-    click(i)
   };
 });
 
